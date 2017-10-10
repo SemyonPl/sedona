@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="shadow-container">
+      <header class="main-header">
+        <a class="logo-link">
+          <img class="logo-picture" src="img/logo.png" width="138" height="70" alt="Sedona">
+        </a>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link" href="#">Информация</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Фото и видео</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">Карта штата</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="hotels.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="welcome">
+          <img src="img/welcome.png" width="458" height="352" alt="Welcome to Sedona">
+        </div>
+      </header>
+      
+      <!-- Статья "Причины" -->
+      <article class="best-reasons">
+        <h1 class="reasons-title">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </h1>
+        <p class="reasons-description">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+        </p>
+        <section class="reason-container clearfix">
+          <div class="reason-item reason-town">
+            <h2 class="reason-title">Настоящий городок</h2>
+            <span class="reason-number">- №1 -</span>
+            <p class="reason-description">
+              Седона - не аттракцион для туристов, там течет своя жизнь
+            </p>
+          </div>
+          <div class="reason-image reason-town-image"></div>
+        </section>
+        <section class="features clearfix">
+          <div class="reason-item reason-house">
+            <h2 class="reason-title">Жилье</h2>
+            <p class="reason-description reason-narrow-description">
+              Рекомендуем пожить в настоящем мотеле, все как в кино!
+            </p>
+          </div>
+          <div class="reason-item reason-food">
+            <h2 class="reason-title">Еда</h2>
+            <p class="reason-description">
+              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            </p>
+          </div>
+          <div class="reason-item reason-souvenirs">
+            <h2 class="reason-title">Сувениры</h2>
+            <p class="reason-description">
+              Не только китайского, но и местного производства!
+            </p>
+          </div>
+        </section>
+        <section class="reason-container clearfix">
+          <div class="reason-image reason-bridge-image"></div>
+          <div class="reason-item reason-bridge">
+            <h2 class="reason-title reason-wide-title">Там есть<br/>мост дьявола</h2>
+            <span class="reason-number">- №2 -</span>
+            <p class="reason-description reason-wide-description">
+              Да, по нему можно пройти! Если конечно вы осмелитесь
+            </p>
+          </div>
+        </section>
+        <section class="reasons-block clearfix">
+          <div class="reason-item reason-area">
+            <h2 class="reason-title">Небольшая площадь</h2>
+            <span class="reason-number">- №3 -</span>
+            <p class="reason-description">
+              Все достопримечательности  находятся очень близко
+            </p>
+          </div>
+          <div class="reason-item reason-road">
+            <h2 class="reason-title">Красивая<br/>дорога</h2>
+            <span class="reason-number">- №4 -</span>
+            <p class="reason-description reason-narrow-description">
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </div>
+          <div class="reason-item reason-tourists">
+            <h2 class="reason-title">Мало<br/>туристов</h2>
+            <span class="reason-number">- №5 -</span>
+            <p class="reason-description">
+              Большинство едет в Гранд Каньон и толпится там
+            </p>
+          </div>
+        </section>
+      </article><!-- Конец статьи "Причины" -->
+      
+      <section class="search-hotels">
+        <span class="search-hotels-title">
+          Заинтересовались?
+        </span>
+        <p class="search-hotels-description">
+          Укажите предполагаемые даты поездки,<br/> и мы покажем вам лучшие предложения гостиниц в Cедоне
+        </p>
+        <a class="search-hotels-btn" href="#">
+          Поиск гостиницы в Седоне
+        </a>
+        <!-- Модальное окно "Поиск гостиницы" -->
+        <div class="modal-content modal-search-hotels">
+          <form action="#" method="post">
+            <div class="arrive-date">
+              <label for="arrive-date">Дата заезда:</label>
+              <div class="modal-input-container">
+                <input type="text" name="arrive-date" id="arrive-date" value="24 Апреля 2016">
+                <button class="calendar" type="button" title="Календарь">Календарь</button>
+              </div>
+            </div>
+            <div class="departure-date">
+              <label for="departure-date">Дата отъезда:</label>
+              <div class="modal-input-container">
+                <input type="text" name="departure-date" id="departure-date" value="4 июля 2016">
+                <button class="calendar" type="button" title="Календарь">Календарь</button>
+              </div>
+            </div>
+            <div class="adults">
+              <label for="adults">Взрослые:</label>
+              <div class="quantity-controls">
+                <button class="quantity-less" type="button" title="Меньше">Меньше</button>
+                <input type="text" name="adults" id="adults" value="2">
+                <button class="quantity-more" type="button" title="Больше">Больше</button>
+              </div>
+            </div>
+            <div class="children">
+              <label for="children">Дети:</label>
+              <div class="quantity-controls">
+                <button class="quantity-less" type="button" title="Меньше">Меньше</button>
+                <input type="text" name="children" id="children" value="0">
+                <button class="quantity-more" type="button" title="Больше">Больше</button>
+              </div>
+            </div>
+            <button class="btn modal-search-btn" type="submit">
+              Найти
+            </button>
+          </form>
+        </div><!-- Конец модального окна "Поиск гостиницы"-->
+      </section>
+      
+      <div class="map" id="map"></div>
+
+      <footer class="footer footer-on-content">
+        <div class="footer-hashtag">#visitsedona</div>
+        <div class="footer-social">
+          <a class="btn-social btn-twitter" href="#">Twitter</a>
+          <a class="btn-social btn-facebook" href="#">Facebook</a>
+          <a class="btn-social btn-youtube" href="#">Youtube</a>
+        </div>
+        <div class="footer-designed">
+          <span>Website by</span>
+          <a class="footer-designed-link" href="https://htmlacademy.ru">
+            html academy
+          </a>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxVKs-AB0ez8hQ-HlrQ7JVhPaU-Qfyfkg" async defer></script>
+    <script src="js/popup.min.js"></script>
+  </body>
+</html>
